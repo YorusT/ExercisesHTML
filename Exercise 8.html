@@ -13,17 +13,17 @@
 
         <div>
             <label for="email">Insert your email </label>
-            <input type="email" id="email" name="your email" >
+            <input type="email" id="email" name="your email" required>
             <label for="password">Insert your password </label>
-            <input type="password" id="password" name="your password">
+            <input type="password" id="password" name="your password" required>
         </div>
         <div>
             <label for="complete name">Enter your first name and your surname</label>
-            <input type="name" id="complete name" name="complete name">
+            <input type="name" id="complete name" name="complete name" required>
             <label for="birthdate">Insert you birth date </label>
-            <input type="date" id="birthdate" name="birthdate" min="1920-01-01" max="">
+            <input type="date" id="birthdate" name="birthdate" min="1920-01-01" max="" required>
             <label for="phone number">Insert your phone number </label>
-            <input type="tel" id="phone number" name="phone number">
+            <input type="tel" id="phone number" name="phone number" required>
         </div>
         <div>Chose the best subscription plan for you!
             <select id="form-plan" name="plan">
@@ -45,7 +45,6 @@
                 <input  type="tel" id="cvc" maxlength="3" placeholder="000">
                 <label for="expiredate">Expire Date</label>
                 <input  type="date" id="expiredate" >
-            </label>
         </div>
         <div>
             <label for="ba">Insert your billing adress</label>
