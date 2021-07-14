@@ -14,29 +14,27 @@
         <div>
             <label for="email">Insert your email </label>
             <input type="email" id="email" name="your email" >
-        </div>   
-        <div>
             <label for="password">Insert your password </label>
             <input type="password" id="password" name="your password">
         </div>
         <div>
             <label for="complete name">Enter your first name and your surname</label>
             <input type="name" id="complete name" name="complete name">
-        </div>
-        <div>
             <label for="birthdate">Insert you birth date </label>
             <input type="date" id="birthdate" name="birthdate" min="1920-01-01" max="">
-        </div>
-        <div>
             <label for="phone number">Insert your phone number </label>
             <input type="tel" id="phone number" name="phone number">
         </div>
         <div>Chose the best subscription plan for you!
-            <label for="free plan"> free plan </label>
-            <input type="radio" id="free plan" name="subscription plan">
+            <select id="form-plan" name="plan">
+                <option value="0">Free</option>
+                <optgroup label="Mensili">
+                    <option value="199">10€/mese</option>
+                    <option value="599">20€/mese</option>
+                    <option value="1199">30€/mese</option>
+                </optgroup>
+            </select>
 
-            <label for="3plans">A group of up to 3 plans with increasing price </label>
-            <input type="radio" id="3plans" name="subscription plan">   
         </div>
         <div>    
             <label for="pro"> PRO</label>   <input type="checkbox" id="pro" name="pro" checked>
@@ -53,7 +51,7 @@
             <input type="text" id="ba" name="ba" placeholder="avenue Gustave Eiffel">
         </div>
 
-        
+        <button type="submit">Subscribe</button>
     </form>
     
 </body>
